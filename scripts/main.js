@@ -17,19 +17,17 @@ function add_item(img_url, text, link) {
     text_p.textContent = text;
     wrapper_div.appendChild(text_p);
 
-    let link_a = document.createElement("a");
-    link_a.setAttribute("href", link);
+    // trim the http header in url
     let display_url = link;
     if (link.substring(0,8) == "https://") {
         display_url = link.substring(8, link.length);
     } else if (link.substring(0,7) == "http://") {
         display_url = link.substring(7, link.length);
     }
+    let link_a = document.createElement("a");
+    link_a.setAttribute("href", link);
     link_a.textContent = display_url;
     wrapper_div.appendChild(link_a);
-
-    let hr = document.createElement("hr");
-    content_list.appendChild(hr);
 }
 
 function init() {

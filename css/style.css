@@ -1,6 +1,6 @@
 @font-face {
   font-family: November;
-  src: url(https://github.com/p-z-l/myself/raw/master/fonts/november.regular.ttf);
+  src: url(../fonts/november.regular.ttf);
 }
 
 body {
@@ -10,9 +10,7 @@ body {
 }
 
 div#header-bar {
-    width: 99%;
     margin: 0px;
-    margin-left: 0px;
     overflow: hidden;
     background-color: #c0d0ff;
     color: black;
@@ -21,9 +19,9 @@ div#header-bar {
 }
 
 div#main-content {
-    top: 50%;
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -44,6 +42,15 @@ img.thumbnail {
     margin-right: 8px;
 }
 
+div.list_item {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+div.list_item:hover {
+    background-color: #101020;
+}
+
 div.list_item_text_wrapper {
     font-size: 20px;
     font-weight: bold;
@@ -52,5 +59,13 @@ div.list_item_text_wrapper {
     vertical-align: top;
     max-width: 90%;
     overflow: auto;
+}
+
+a.tab-item {
+    padding: 8px;
+    background-color: white;
+}
+a.tab-item:hover {
+    background-color: #3640ff;
 }
 
