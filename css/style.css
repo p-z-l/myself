@@ -14,7 +14,7 @@ div#header-bar {
     margin: 0px;
     margin-left: 0px;
     overflow: hidden;
-    background-color: white;
+    background-color: #c0d0ff;
     color: black;
     padding: 10px;
     align: center;
@@ -28,27 +28,29 @@ div#main-content {
 
 a {
     font-weight: bold;
+    word-wrap: break-word;
 }
 
-a:        {color: #3640ff;text-decoration: none;}
-a:link    {color: #3640ff;text-decoration: none;}
-a:visited {color: #3640ff;text-decoration: none;}
-a:focus   {color: #3640ff;text-decoration: none;}
-a:active  {color: #3640ff;text-decoration: none;}
+a:        {color: #3660ff;text-decoration: none;}
+a:link    {color: #3660ff;text-decoration: none;}
+a:visited {color: #3660ff;text-decoration: none;}
+a:focus   {color: #3660ff;text-decoration: none;}
+a:active  {color: #3660ff;text-decoration: none;}
 a:hover   {color: #ffffff;text-decoration: none;background-color: #3640ff;}
 
 img.thumbnail {
     height: 128px;
     max-width: 256px;
+    margin-right: 8px;
 }
 
 div.list_item_text_wrapper {
-    margin-left: 8px;
     font-size: 20px;
     font-weight: bold;
-    height: 128px;
+    min-height: 128px;
     display: inline-block;
-    padding-top: px;
     vertical-align: top;
+    max-width: 90%;
+    overflow: auto;
 }
 
