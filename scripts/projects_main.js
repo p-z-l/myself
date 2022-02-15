@@ -1,0 +1,46 @@
+function add_item(img_url, text, link) {
+    let content_list = document.getElementById("content-list");
+    let item_div = document.createElement("div");
+    item_div.classList.add('list_item');
+    content_list.appendChild(item_div);
+
+    let thumbnail_img = document.createElement("img");
+    thumbnail_img.classList.add("thumbnail");
+    thumbnail_img.setAttribute("src", img_url);
+    item_div.appendChild(thumbnail_img);
+
+    let wrapper_div = document.createElement("div");
+    wrapper_div.classList.add('list_item_text_wrapper');
+    item_div.appendChild(wrapper_div);
+
+    let text_p = document.createElement("p");
+    text_p.textContent = text;
+    wrapper_div.appendChild(text_p);
+
+    // trim the http header in url
+    let display_url = link;
+    if (link.substring(0,8) == "https://") {
+        display_url = link.substring(8, link.length);
+    } else if (link.substring(0,7) == "http://") {
+        display_url = link.substring(7, link.length);
+    }
+    let link_a = document.createElement("a");
+    link_a.setAttribute("href", link);
+    link_a.textContent = display_url;
+    wrapper_div.appendChild(link_a);
+}
+
+function init() {
+    add_item(
+        "https://github.com/dwarvesf/hidden/raw/develop/img/icon_512%402x.png?raw=true",
+        "dwarvesf/hidden",
+        "https://github.com/dwarvesf/hidden")
+    add_item(
+        "https://github.com/p-z-l/magicTmux/raw/master/screenshot.png",
+        "p-z-l/magicTmux",
+        "https://github.com/p-z-l/magicTmux")
+    add_item(
+        "https://i.imgur.com/x3X4LWu.png",
+        "p-z-l/nvim-config",
+        "https://github.com/p-z-l/nvim-config")
+}
