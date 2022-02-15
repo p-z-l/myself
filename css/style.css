@@ -1,14 +1,12 @@
-/*
 @font-face {
-  font-family: Best-ten;
-  src: url(fonts/BestTen-CRT.oft);
+  font-family: Best-Ten;
+  src: url(https://github.com/p-z-l/myself/raw/master/fonts/november.regular.ttf);
 }
-*/
 
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: Sans-Serif;
+    font-family: Best-Ten;
 }
 
 div#header-bar {
