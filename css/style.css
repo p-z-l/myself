@@ -1,12 +1,12 @@
 @font-face {
-  font-family: Best-Ten;
+  font-family: November;
   src: url(https://github.com/p-z-l/myself/raw/master/fonts/november.regular.ttf);
 }
 
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: Best-Ten;
+    font-family: November;
 }
 
 div#header-bar {
