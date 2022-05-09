@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'retro';
-  src: url(ChiKareGo.ttf);
+  src: url(chikarego.woff2);
 }
 
 body {
@@ -25,3 +25,37 @@ a:visited {color: #3640ff;text-decoration: none;}
 a:focus   {color: #3640ff;text-decoration: none;}
 a:active  {color: #3640ff;text-decoration: none;}
 a:hover   {color: #ffffff;text-decoration: none;background-color: #3660ff;}
+
+img {
+  /* use nearest neighbor scaling */
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+}
+
+img#kerbal {
+  width:48px;
+  height:48px;
+  border: solid black;
+  margin-right: 8px;
+}
+
+img.sociallogo {
+  width: 32px;
+}
+
+.socialtag {
+  float: right;
+  background-color: white;
+  width: fit-content;
+  border: solid black;
+  padding: 2px;
+  color: black;
+  margin-right: 8px;
+}
+
+.socialtag:hover {
+  background-color: black;
+  color: white;
+}
