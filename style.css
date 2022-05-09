@@ -6,6 +6,13 @@
 body {
   font-family: retro !important;
   background-color: #eaeaea;
+  max-width: 1024px;
+  padding: 8px;
+}
+
+::selection {
+  color: white;
+  background: #202020;
 }
 
 p,a {
