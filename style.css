@@ -50,14 +50,17 @@ div.socialtag {
   color: black;
   margin-right: 8px;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 div.socialtag:hover {
   background-color: black;
+  border: solid black;
   color: white;
   filter: brightness(1000%);
 }
 
 div.socialtag>img {
   width: 32px;
+  height: 32px;
 }
