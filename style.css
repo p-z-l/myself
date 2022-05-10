@@ -41,11 +41,7 @@ img#kerbal {
   margin-right: 8px;
 }
 
-img.sociallogo {
-  width: 32px;
-}
-
-.socialtag {
+div.socialtag {
   float: right;
   background-color: white;
   width: fit-content;
@@ -55,7 +51,12 @@ img.sociallogo {
   margin-right: 8px;
 }
 
-.socialtag:hover {
+div.socialtag:hover {
   background-color: black;
   color: white;
+  filter: brightness(1000%);
+}
+
+div.socialtag>img {
+  width: 32px;
 }
