@@ -19,12 +19,33 @@ p,a {
   font-size: 20px;
 }
 
-a:        {color: #3640ff;text-decoration: none;}
-a:link    {color: #3640ff;text-decoration: none;}
-a:visited {color: #3640ff;text-decoration: none;}
-a:focus   {color: #3640ff;text-decoration: none;}
-a:active  {color: #3640ff;text-decoration: none;}
-a:hover   {color: #ffffff;text-decoration: none;background-color: #3660ff;}
+a:        {color: black;text-decoration: none;}
+a:link    {color: black;text-decoration: none;}
+a:visited {color: black;text-decoration: none;}
+a:focus   {color: black;text-decoration: none;}
+a:active  {color: black;text-decoration: none;}
+a:hover   {color: white;text-decoration: none;background-color: #3660ff;}
+
+a>* {
+  padding-left:2px;
+  padding-right:2px;
+}
+
+a.postlink>div {
+  border: solid #00000000;
+  color: black;
+  padding-left: 8px;
+  margin-top: 0px;
+}
+a.postlink>div:link    {color: black;}
+a.postlink>div:visited {color: black;}
+a.postlink>div:focus   {color: black;}
+a.postlink>div:active  {color: black;}
+a.postlink>div:hover   {
+  color: black;
+  background-color: white;
+  border: solid black;
+}
 
 img {
   /* use nearest neighbor scaling */
@@ -32,6 +53,10 @@ img {
   image-rendering: crisp-edges;
   /* Chromium + Safari */
   image-rendering: pixelated;
+}
+
+hr {
+  border: 1px solid #202020;
 }
 
 img#kerbal {
